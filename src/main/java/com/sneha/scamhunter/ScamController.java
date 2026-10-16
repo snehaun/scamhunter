@@ -8,9 +8,12 @@ import org.springframework.http.HttpStatus;
 import java.util.*;
 import java.util.regex.Pattern;
 
+
+
 @RestController
 @CrossOrigin(origins = {
     "http://localhost:5173",
+    "https://scamhunter-kappa.vercel.app",
     "https://scamhunter-h98020oqu-sneha-nagargoje-s-projects.vercel.app"
 })
 @RequestMapping("/api/scam")
