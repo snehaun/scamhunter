@@ -4,14 +4,15 @@ package com.sneha.scamhunter;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.GetMapping;
-import java.util.Map;
 
 import java.util.*;
 import java.util.regex.Pattern;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://scamhunter-h98020oqu-sneha-nagargoje-s-projects.vercel.app"
+})
 @RequestMapping("/api/scam")
 public class ScamController {
 
